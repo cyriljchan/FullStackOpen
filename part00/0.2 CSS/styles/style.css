@@ -1,0 +1,78 @@
+/* 
+
+CSS Selectors
+
+Element Selector : All HTML elements of the specified type.
+p {
+    property : value;
+}
+
+Id Selector : The element on the page with the specified ID. On a given HTML page, each id value should be unique.
+#id-name {
+    property : value;
+}
+
+Class Selector : The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.
+.class-id {
+    property : value;
+}
+
+Attribute Selector : The element(s) on the page with the specified attribute.
+img[src] {
+    property : value;
+}
+
+Pseudo-class Selector : The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)
+a:hover {
+    property : value;
+}
+
+
+CSS Boxes
+Padding, the space around the content.
+Border, the solid line that is just outside the padding.
+Margin, the space around the outside of the border.
+
+ONLY Block type elements have auto-margins, so take note of the display types
+
+*/
+
+html {
+    background-color: beige;
+    font-family: 'Lobster', cursive;
+  }
+
+body {
+    background-color: burlywood;
+    width: 600px;
+    padding: 30px;
+    border: 10px dashed black;
+    margin: auto;
+}
+
+h1 {
+    background-color: coral;
+    text-align: center;
+    
+    font-size: 60px;
+    color: cadetblue;
+    text-shadow: 5px 5px 5px black;
+}
+
+p {
+    color: tomato;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+a:hover {
+    font-size: x-large;
+    color: hotpink;
+}
+
+#list {
+    color: steelblue;
+}
