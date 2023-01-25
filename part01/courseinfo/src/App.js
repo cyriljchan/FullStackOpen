@@ -1,5 +1,5 @@
 const Header = (prop) => {
-  console.log('Header: ', prop)
+  // console.log('Header: ', prop)
 
   return (
     <div>
@@ -8,26 +8,32 @@ const Header = (prop) => {
   )
 }
 
-const Content = (prop) => {
-  console.log('Content: ', prop)
-
+const Part = (prop) => {
+  console.log('Part: ', prop)
+  
   return (
     <div>
       <p>
-        {prop.part1} {prop.exercises1}
-      </p>
-      <p>
-      {prop.part2} {prop.exercises2}
-      </p>
-      <p>
-      {prop.part3} {prop.exercises3}
+        {prop.name} {prop.exercises}
       </p>
     </div>
   )
 }
 
+const Content = (prop) => {
+  // console.log('Content: ', prop)
+
+  return (
+    <div>
+      <Part name={prop.part1} exercises={prop.exercises1} />
+      <Part name={prop.part2} exercises={prop.exercises2} />
+      <Part name={prop.part3} exercises={prop.exercises3} />
+    </div>
+  )
+}
+
 const Total = (prop) => {
-  console.log('Total', prop)
+  // console.log('Total', prop)
 
   return (
     <div>
